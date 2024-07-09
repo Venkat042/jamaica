@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Malar Clinic - Contact Numbers</title>
+<script language="javascript">
+
+function chng()
+{
+var ct = cnform.cn.value;
+
+if (ct == "ukw")
+{
+	document.getElementById('d1').innerHTML='';
+}
+
+if (ct == "rel")
+ {
+document.getElementById('d1').innerHTML=("<img src=relativesno.jpg>");
+
+}
+
+if (ct == "frd")
+ {
+document.getElementById('d1').innerHTML=("<img src=friendsno.jpg>");
+
+}
+
+if (ct == "doc")
+ {
+document.getElementById('d1').innerHTML=("<img src=doctorsno.jpg>");
+
+}
+
+ }
+</script>
+</head>
+<body>
+<img src="contactno.jpg">
+<br> 
+<form name="cnform" method="get">
+<table>
+<tr>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="signin.htm"><img src=hm.jpg></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="cn" onchange="chng()">
+<option value="ukw">---Important Numbers---</option>
+<option value="rel">Relatives</option>
+<option value="frd">Friends</option>
+<option value="doc">Doctors</option>
+</select>
+<p id='d1'></p>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
